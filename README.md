@@ -1,6 +1,6 @@
 # AI Image Generator
 
-A simple AI powered image generator built with Next.js. Powered by [Replicate](https://replicate.com/)
+A simple AI image generator built with Next.js. Powered by [Replicate](https://replicate.com/)
 
 
 ![Screenshot1](https://user-images.githubusercontent.com/119585058/261466504-0141a46e-fa2f-4026-be02-740009c7ae7f.png)
