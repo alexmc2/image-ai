@@ -44,13 +44,14 @@ export default function Home() {
   };
 
   return (
+    <div className={styles.card}>
     <div className={styles.container}>
       <Head>
         <title>Alex's Image Generator</title>
       </Head>
 
       <p>
-        Alex's AI Image Generator
+       AI Image Generator
       </p>
 
       <form className={styles.form} onSubmit={handleSubmit}>
@@ -79,6 +80,7 @@ export default function Home() {
           <p>status: {prediction.status}</p>
         </div>
       )}
+    </div>
     </div>
   );
 }
