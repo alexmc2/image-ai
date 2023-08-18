@@ -2,6 +2,7 @@
 
 A simple AI image generator built with Next.js. Powered by [Replicate](https://replicate.com/)
 
+[Link to Deployed Site](https://image-ai-orpin.vercel.app/)
 
 ![Screenshot1](https://user-images.githubusercontent.com/119585058/261466504-0141a46e-fa2f-4026-be02-740009c7ae7f.png)
 ![Screenshot2](https://user-images.githubusercontent.com/119585058/261467287-6122e4d1-9398-4c44-98af-5271f16cbb77.png)
