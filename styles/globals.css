@@ -110,8 +110,12 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 body {
-  background-image: url('/background2.jpg');
+  background-image: url('/background.jpg');
   background-size: cover; /* This will cover the entire viewport */
   background-repeat: no-repeat; /* This will prevent the image from repeating */
-  background-attachment: fixed; /* This makes the background fixed during scrolling */
+  background-position-x: center; /* Center the image within the element */
+  background-attachment: fixed;
+  background-size:  cover;
+
+
 }

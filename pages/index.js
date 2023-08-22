@@ -45,42 +45,41 @@ export default function Home() {
 
   return (
     <div className={styles.card}>
-    <div className={styles.container}>
-      <Head>
-        <title>Alex's Image Generator</title>
-      </Head>
+      <div className={styles.container}>
+        <Head>
+          <title>Alex's Image Generator</title>
+        </Head>
 
-      <p>
-       AI Image Generator
-      </p>
+        <p className={styles.title}>AI Image Generator</p>
+        {/* <p className={styles.by}>By Alex</p> */}
 
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="prompt"
-          placeholder="Enter a prompt to display an image"
-        />
-        <button type="submit">Go!</button>
-      </form>
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="prompt"
+            placeholder="Enter a prompt to display an image"
+          />
+          <button type="submit">Go!</button>
+        </form>
 
-      {error && <div>{error}</div>}
+        {error && <div>{error}</div>}
 
-      {prediction && (
-        <div>
-          {prediction.output && (
-            <div className={styles.imageWrapper}>
-              <Image
-                fill
-                src={prediction.output[prediction.output.length - 1]}
-                alt="output"
-                sizes="100vw"
-              />
-            </div>
-          )}
-          <p>status: {prediction.status}</p>
-        </div>
-      )}
-    </div>
+        {prediction && (
+          <div>
+            {prediction.output && (
+              <div className={styles.imageWrapper}>
+                <Image
+                  fill
+                  src={prediction.output[prediction.output.length - 1]}
+                  alt="output"
+                  sizes="100vw"
+                />
+              </div>
+            )}
+            <p>status: {prediction.status}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
